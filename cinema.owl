@@ -10,16 +10,712 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/toby/ontologies/2015/5/cinema"
+     xml:base="http://www.cinema.com/ontologies/cinema.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/toby/ontologies/2015/5/cinema">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="http://www.cinema.com/ontologies/cinema.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string">An ontologies that describes the world of cinema</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Animazione"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Australia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Avventura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biografico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Canada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commedia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Documentario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doppiatore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drammatico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fantascienza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fantasy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilmBlockbuster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilmFantascientifici"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilmIndipendente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilmInglesi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilmRadcliffe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fonico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Francia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Germania"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Giappone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Guerra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HarryPotter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horror"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IlSignoreDegliAnelli"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#India"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inghilterra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Italia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Matrix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Montatore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musicale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nazione"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produttore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professione"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Regista"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sceneggiatore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StarWars"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StatiUniti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thriller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Truccatore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Western"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coprotagonista"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#faParteDelGenere"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#haAttore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#haProduttore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#haProfessionista"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#haRegista"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#haTruccatore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#èAttoreDi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#èProduttoreDi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#èProfessionistaDi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#èRegistaDi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#èStatoGiratoIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#èTruccatoreDi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DanielRadcliffe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DavidHeyman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EmmaWatson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HarryPotter1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HarryPotter2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HarryPotter3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RupertGrint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#L&apos;illusionista"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#FilmBlockbuster"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Film"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#haProduttore"/>
+                <Class IRI="#Produttore"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FilmFantascientifici"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Film"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#faParteDelGenere"/>
+                <Class IRI="#Fantascienza"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FilmIndipendente"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Film"/>
+            <ObjectExactCardinality cardinality="0">
+                <ObjectProperty IRI="#haProduttore"/>
+                <Class IRI="#Produttore"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FilmInglesi"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Film"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#èStatoGiratoIn"/>
+                <Class IRI="#Inghilterra"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FilmRadcliffe"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Film"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#haAttore"/>
+                <NamedIndividual IRI="#DanielRadcliffe"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Animazione"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attore"/>
+        <Class IRI="#Professione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Australia"/>
+        <Class IRI="#Nazione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avventura"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biografico"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Canada"/>
+        <Class IRI="#Nazione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commedia"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Documentario"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doppiatore"/>
+        <Class IRI="#Professione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drammatico"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fantascienza"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fantasy"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fonico"/>
+        <Class IRI="#Professione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Francia"/>
+        <Class IRI="#Nazione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Genere"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Germania"/>
+        <Class IRI="#Nazione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Giappone"/>
+        <Class IRI="#Nazione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Guerra"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarryPotter"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarryPotter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#faParteDelGenere"/>
+            <Class IRI="#Fantasy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarryPotter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#èStatoGiratoIn"/>
+            <Class IRI="#Inghilterra"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horror"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IlSignoreDegliAnelli"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IlSignoreDegliAnelli"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#faParteDelGenere"/>
+            <Class IRI="#Fantasy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#India"/>
+        <Class IRI="#Nazione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inghilterra"/>
+        <Class IRI="#Nazione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Italia"/>
+        <Class IRI="#Nazione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Matrix"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Matrix"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#faParteDelGenere"/>
+            <Class IRI="#Avventura"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Matrix"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#faParteDelGenere"/>
+            <Class IRI="#Fantascienza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Montatore"/>
+        <Class IRI="#Professione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musicale"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nazione"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produttore"/>
+        <Class IRI="#Professione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professione"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regista"/>
+        <Class IRI="#Professione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sceneggiatore"/>
+        <Class IRI="#Professione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StarWars"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StarWars"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#faParteDelGenere"/>
+            <Class IRI="#Fantascienza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StatiUniti"/>
+        <Class IRI="#Nazione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Storico"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thriller"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Truccatore"/>
+        <Class IRI="#Professione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Western"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Attore"/>
+        <Class IRI="#Doppiatore"/>
+        <Class IRI="#Fonico"/>
+        <Class IRI="#Montatore"/>
+        <Class IRI="#Produttore"/>
+        <Class IRI="#Regista"/>
+        <Class IRI="#Sceneggiatore"/>
+        <Class IRI="#Truccatore"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Australia"/>
+        <Class IRI="#Canada"/>
+        <Class IRI="#Francia"/>
+        <Class IRI="#Germania"/>
+        <Class IRI="#Giappone"/>
+        <Class IRI="#India"/>
+        <Class IRI="#Italia"/>
+        <Class IRI="#StatiUniti"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Film"/>
+        <Class IRI="#Genere"/>
+        <Class IRI="#Nazione"/>
+        <Class IRI="#Professione"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HarryPotter"/>
+        <Class IRI="#IlSignoreDegliAnelli"/>
+        <Class IRI="#Matrix"/>
+        <Class IRI="#StarWars"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Attore"/>
+        <NamedIndividual IRI="#DanielRadcliffe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Produttore"/>
+        <NamedIndividual IRI="#DavidHeyman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attore"/>
+        <NamedIndividual IRI="#EmmaWatson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HarryPotter"/>
+        <NamedIndividual IRI="#HarryPotter1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HarryPotter"/>
+        <NamedIndividual IRI="#HarryPotter2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HarryPotter"/>
+        <NamedIndividual IRI="#HarryPotter3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attore"/>
+        <NamedIndividual IRI="#RupertGrint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FilmIndipendente"/>
+        <NamedIndividual IRI="#L&apos;illusionista"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coprotagonista"/>
+        <NamedIndividual IRI="#DanielRadcliffe"/>
+        <NamedIndividual IRI="#EmmaWatson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coprotagonista"/>
+        <NamedIndividual IRI="#EmmaWatson"/>
+        <NamedIndividual IRI="#RupertGrint"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haAttore"/>
+        <NamedIndividual IRI="#HarryPotter1"/>
+        <NamedIndividual IRI="#RupertGrint"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haAttore"/>
+        <NamedIndividual IRI="#HarryPotter1"/>
+        <NamedIndividual IRI="#DanielRadcliffe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haAttore"/>
+        <NamedIndividual IRI="#HarryPotter1"/>
+        <NamedIndividual IRI="#EmmaWatson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haProduttore"/>
+        <NamedIndividual IRI="#HarryPotter1"/>
+        <NamedIndividual IRI="#DavidHeyman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haAttore"/>
+        <NamedIndividual IRI="#HarryPotter2"/>
+        <NamedIndividual IRI="#RupertGrint"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haAttore"/>
+        <NamedIndividual IRI="#HarryPotter2"/>
+        <NamedIndividual IRI="#DanielRadcliffe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haAttore"/>
+        <NamedIndividual IRI="#HarryPotter2"/>
+        <NamedIndividual IRI="#EmmaWatson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haProduttore"/>
+        <NamedIndividual IRI="#HarryPotter2"/>
+        <NamedIndividual IRI="#DavidHeyman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haAttore"/>
+        <NamedIndividual IRI="#HarryPotter3"/>
+        <NamedIndividual IRI="#EmmaWatson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haAttore"/>
+        <NamedIndividual IRI="#HarryPotter3"/>
+        <NamedIndividual IRI="#DanielRadcliffe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haAttore"/>
+        <NamedIndividual IRI="#HarryPotter3"/>
+        <NamedIndividual IRI="#RupertGrint"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haProduttore"/>
+        <NamedIndividual IRI="#HarryPotter3"/>
+        <NamedIndividual IRI="#DavidHeyman"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#haAttore"/>
+        <ObjectProperty IRI="#haProfessionista"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#haProduttore"/>
+        <ObjectProperty IRI="#haProfessionista"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#haRegista"/>
+        <ObjectProperty IRI="#haProfessionista"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#haTruccatore"/>
+        <ObjectProperty IRI="#haProfessionista"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#èAttoreDi"/>
+        <ObjectProperty IRI="#èProfessionistaDi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#èProduttoreDi"/>
+        <ObjectProperty IRI="#èProfessionistaDi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#èRegistaDi"/>
+        <ObjectProperty IRI="#èProfessionistaDi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#èTruccatoreDi"/>
+        <ObjectProperty IRI="#èProfessionistaDi"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#haAttore"/>
+        <ObjectProperty IRI="#èAttoreDi"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#haProduttore"/>
+        <ObjectProperty IRI="#èProduttoreDi"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#èProfessionistaDi"/>
+        <ObjectProperty IRI="#haProfessionista"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#èRegistaDi"/>
+        <ObjectProperty IRI="#haRegista"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#èTruccatoreDi"/>
+        <ObjectProperty IRI="#haTruccatore"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#coprotagonista"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#coprotagonista"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#coprotagonista"/>
+        <Class IRI="#Attore"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#faParteDelGenere"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#haAttore"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#haProduttore"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#haRegista"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#haTruccatore"/>
+        <Class IRI="#Attore"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#èStatoGiratoIn"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coprotagonista"/>
+        <Class IRI="#Attore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#faParteDelGenere"/>
+        <Class IRI="#Genere"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#haAttore"/>
+        <Class IRI="#Attore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#haProduttore"/>
+        <Class IRI="#Produttore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#haRegista"/>
+        <Class IRI="#Regista"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#haTruccatore"/>
+        <Class IRI="#Truccatore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#èStatoGiratoIn"/>
+        <Class IRI="#Nazione"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 
