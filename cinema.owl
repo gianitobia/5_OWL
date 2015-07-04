@@ -80,10 +80,10 @@
         <Class IRI="#FilmAdAltissimoBudget"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FilmBlockbuster"/>
+        <Class IRI="#FilmConAttoriInglesi"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FilmConAttoriInglesi"/>
+        <Class IRI="#FilmConProduttore"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FilmConProfessionistiAmericani"/>
@@ -340,6 +340,9 @@
     <Declaration>
         <NamedIndividual IRI="#L&apos;illusionista"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#l&apos;illusionista"/>
+    </Declaration>
     <EquivalentClasses>
         <Class IRI="#AttoriAmericani"/>
         <ObjectIntersectionOf>
@@ -386,22 +389,22 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#FilmBlockbuster"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Film"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#haProduttore"/>
-                <Class IRI="#Produttore"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#FilmConAttoriInglesi"/>
         <ObjectIntersectionOf>
             <Class IRI="#Film"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#haAttore"/>
                 <Class IRI="#AttoriInglesi"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FilmConProduttore"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Film"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#haProduttore"/>
+                <Class IRI="#Produttore"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -435,10 +438,15 @@
         <Class IRI="#FilmIndipendente"/>
         <ObjectIntersectionOf>
             <Class IRI="#Film"/>
-            <ObjectExactCardinality cardinality="0">
-                <ObjectProperty IRI="#haProduttore"/>
-                <Class IRI="#Produttore"/>
-            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#budget"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="&xsd;maxExclusive">
+                        <Literal datatypeIRI="&xsd;integer">20000000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -706,16 +714,6 @@
         <Class IRI="#Genere"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#Attore"/>
-        <Class IRI="#Doppiatore"/>
-        <Class IRI="#Fonico"/>
-        <Class IRI="#Montatore"/>
-        <Class IRI="#Produttore"/>
-        <Class IRI="#Regista"/>
-        <Class IRI="#Sceneggiatore"/>
-        <Class IRI="#Truccatore"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Australia"/>
         <Class IRI="#Canada"/>
         <Class IRI="#Francia"/>
@@ -882,8 +880,8 @@
         <NamedIndividual IRI="#Steven_Spielberg"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FilmIndipendente"/>
-        <NamedIndividual IRI="#L&apos;illusionista"/>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#l&apos;illusionista"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#coprotagonista"/>
@@ -1063,7 +1061,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#budget"/>
         <NamedIndividual IRI="#Casino_Royale"/>
-        <Literal datatypeIRI="&xsd;integer">1000000</Literal>
+        <Literal datatypeIRI="&xsd;integer">100000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#budget"/>
@@ -1073,12 +1071,22 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#budget"/>
         <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_La_Compagnia_dellAnello"/>
-        <Literal datatypeIRI="&xsd;integer">7000000</Literal>
+        <Literal datatypeIRI="&xsd;integer">700000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#budget"/>
         <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_Le_due_torri"/>
         <Literal datatypeIRI="&xsd;integer">120000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#Jurassic_Park"/>
+        <Literal datatypeIRI="&xsd;integer">200000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#La_guerra_dei_mondi"/>
+        <Literal datatypeIRI="&xsd;integer">180000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#budget"/>
@@ -1098,17 +1106,22 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#budget"/>
         <NamedIndividual IRI="#Quantum_of_Solace"/>
-        <Literal datatypeIRI="&xsd;integer">1000000</Literal>
+        <Literal datatypeIRI="&xsd;integer">100000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#budget"/>
         <NamedIndividual IRI="#Skyfall"/>
-        <Literal datatypeIRI="&xsd;integer">10000000</Literal>
+        <Literal datatypeIRI="&xsd;integer">100000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#budget"/>
         <NamedIndividual IRI="#Spectre"/>
-        <Literal datatypeIRI="&xsd;integer">2000000</Literal>
+        <Literal datatypeIRI="&xsd;integer">150000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#l&apos;illusionista"/>
+        <Literal datatypeIRI="&xsd;integer">17000000</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#haAttore"/>
