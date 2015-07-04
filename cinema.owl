@@ -77,6 +77,9 @@
         <Class IRI="#Film"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FilmAdAltissimoBudget"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#FilmBlockbuster"/>
     </Declaration>
     <Declaration>
@@ -224,6 +227,9 @@
         <ObjectProperty IRI="#èTruccatoreDi"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#budget"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Casino_Royale"/>
     </Declaration>
     <Declaration>
@@ -362,6 +368,21 @@
                 <ObjectProperty IRI="#natoIn"/>
                 <Class IRI="#RegnoUnito"/>
             </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FilmAdAltissimoBudget"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Film"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#budget"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="&xsd;minInclusive">
+                        <Literal datatypeIRI="&xsd;integer">100000000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -517,6 +538,10 @@
     <SubClassOf>
         <Class IRI="#Film"/>
         <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FilmAdAltissimoBudget"/>
+        <Class IRI="#Film"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FilmConAttoriInglesi"/>
@@ -1035,6 +1060,56 @@
         <NamedIndividual IRI="#Steven_Spielberg"/>
         <NamedIndividual IRI="#Schindlers_List"/>
     </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#Casino_Royale"/>
+        <Literal datatypeIRI="&xsd;integer">1000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_Il_ritorno_del_re"/>
+        <Literal datatypeIRI="&xsd;integer">100000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_La_Compagnia_dellAnello"/>
+        <Literal datatypeIRI="&xsd;integer">7000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_Le_due_torri"/>
+        <Literal datatypeIRI="&xsd;integer">120000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#Lo_Hobbit_-_La_battaglia_delle_cinque_armate"/>
+        <Literal datatypeIRI="&xsd;integer">50000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#Lo_Hobbit_-_La_desolazione_di_Smaug"/>
+        <Literal datatypeIRI="&xsd;integer">50000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#Lo_Hobbit_-_Un_viaggio_inaspettato"/>
+        <Literal datatypeIRI="&xsd;integer">50000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#Quantum_of_Solace"/>
+        <Literal datatypeIRI="&xsd;integer">1000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#Skyfall"/>
+        <Literal datatypeIRI="&xsd;integer">10000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#budget"/>
+        <NamedIndividual IRI="#Spectre"/>
+        <Literal datatypeIRI="&xsd;integer">2000000</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#haAttore"/>
         <ObjectProperty IRI="#haProfessionista"/>
@@ -1157,6 +1232,14 @@
         <ObjectProperty IRI="#èStatoGiratoIn"/>
         <Class IRI="#Nazione"/>
     </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#budget"/>
+        <Class IRI="#Film"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#budget"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
 </Ontology>
 
 
