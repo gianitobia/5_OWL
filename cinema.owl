@@ -26,10 +26,22 @@
         <Literal datatypeIRI="&xsd;string">An ontologies that describes the world of cinema</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#Agente007"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Animazione"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Attore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttoriAmericani"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttoriFrancesi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttoriInglesi"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Australia"/>
@@ -66,6 +78,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#FilmBlockbuster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilmConAttoriInglesi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilmConProfessionistiAmericani"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FilmFantascientifici"/>
@@ -110,10 +128,10 @@
         <Class IRI="#India"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Inghilterra"/>
+        <Class IRI="#Italia"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Italia"/>
+        <Class IRI="#Lo_Hobbit"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Matrix"/>
@@ -135,6 +153,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Regista"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegistaAmericano"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegnoUnito"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sceneggiatore"/>
@@ -179,6 +203,9 @@
         <ObjectProperty IRI="#haTruccatore"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#natoIn"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#èAttoreDi"/>
     </Declaration>
     <Declaration>
@@ -197,13 +224,40 @@
         <ObjectProperty IRI="#èTruccatoreDi"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Casino_Royale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cedar_Rapids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chester"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cincinnati"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#DanielRadcliffe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daniel_Craig"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DavidHeyman"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ElijahWood"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#EmmaWatson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fulham"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hammersmith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Harlow"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#HarryPotter1"/>
@@ -215,11 +269,101 @@
         <NamedIndividual IRI="#HarryPotter3"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Hugh_Grant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_Il_ritorno_del_re"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_La_Compagnia_dellAnello"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_Le_due_torri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jurassic_Park"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KeanuReeves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#La_guerra_dei_mondi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lo_Hobbit_-_La_battaglia_delle_cinque_armate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lo_Hobbit_-_La_desolazione_di_Smaug"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lo_Hobbit_-_Un_viaggio_inaspettato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Matrix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MatrixReloaded"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MatrixRevolution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parigi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quantum_of_Solace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quattro_matrimoni_e_un_funerale"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#RupertGrint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Schindlers_List"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Skyfall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spectre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Steven_Spielberg"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#L&apos;illusionista"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AttoriAmericani"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Attore"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#natoIn"/>
+                <Class IRI="#StatiUniti"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AttoriFrancesi"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Attore"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#natoIn"/>
+                <Class IRI="#Francia"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AttoriInglesi"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Attore"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#natoIn"/>
+                <Class IRI="#RegnoUnito"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#FilmBlockbuster"/>
         <ObjectIntersectionOf>
@@ -228,6 +372,32 @@
                 <ObjectProperty IRI="#haProduttore"/>
                 <Class IRI="#Produttore"/>
             </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FilmConAttoriInglesi"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Film"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#haAttore"/>
+                <Class IRI="#AttoriInglesi"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FilmConProfessionistiAmericani"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Film"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#haAttore"/>
+                    <Class IRI="#AttoriAmericani"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#haRegista"/>
+                    <Class IRI="#RegistaAmericano"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -256,7 +426,7 @@
             <Class IRI="#Film"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#èStatoGiratoIn"/>
-                <Class IRI="#Inghilterra"/>
+                <Class IRI="#RegnoUnito"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -270,6 +440,20 @@
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RegistaAmericano"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Regista"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#natoIn"/>
+                <Class IRI="#StatiUniti"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Agente007"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Animazione"/>
         <Class IRI="#Genere"/>
@@ -277,6 +461,18 @@
     <SubClassOf>
         <Class IRI="#Attore"/>
         <Class IRI="#Professione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttoriAmericani"/>
+        <Class IRI="#Attore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttoriFrancesi"/>
+        <Class IRI="#Attore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttoriInglesi"/>
+        <Class IRI="#Attore"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Australia"/>
@@ -323,6 +519,14 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FilmConAttoriInglesi"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FilmConProfessionistiAmericani"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Fonico"/>
         <Class IRI="#Professione"/>
     </SubClassOf>
@@ -361,7 +565,7 @@
         <Class IRI="#HarryPotter"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#èStatoGiratoIn"/>
-            <Class IRI="#Inghilterra"/>
+            <Class IRI="#RegnoUnito"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -384,12 +588,12 @@
         <Class IRI="#Nazione"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Inghilterra"/>
+        <Class IRI="#Italia"/>
         <Class IRI="#Nazione"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Italia"/>
-        <Class IRI="#Nazione"/>
+        <Class IRI="#Lo_Hobbit"/>
+        <Class IRI="#IlSignoreDegliAnelli"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Matrix"/>
@@ -432,6 +636,14 @@
     <SubClassOf>
         <Class IRI="#Regista"/>
         <Class IRI="#Professione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegistaAmericano"/>
+        <Class IRI="#Regista"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegnoUnito"/>
+        <Class IRI="#Nazione"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sceneggiatore"/>
@@ -501,8 +713,28 @@
         <Class IRI="#StarWars"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#Agente007"/>
+        <NamedIndividual IRI="#Casino_Royale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StatiUniti"/>
+        <NamedIndividual IRI="#Cedar_Rapids"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegnoUnito"/>
+        <NamedIndividual IRI="#Chester"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StatiUniti"/>
+        <NamedIndividual IRI="#Cincinnati"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Attore"/>
         <NamedIndividual IRI="#DanielRadcliffe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attore"/>
+        <NamedIndividual IRI="#Daniel_Craig"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Produttore"/>
@@ -510,7 +742,23 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attore"/>
+        <NamedIndividual IRI="#ElijahWood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attore"/>
         <NamedIndividual IRI="#EmmaWatson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegnoUnito"/>
+        <NamedIndividual IRI="#Fulham"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegnoUnito"/>
+        <NamedIndividual IRI="#Hammersmith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegnoUnito"/>
+        <NamedIndividual IRI="#Harlow"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#HarryPotter"/>
@@ -526,7 +774,87 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attore"/>
+        <NamedIndividual IRI="#Hugh_Grant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IlSignoreDegliAnelli"/>
+        <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_Il_ritorno_del_re"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IlSignoreDegliAnelli"/>
+        <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_La_Compagnia_dellAnello"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IlSignoreDegliAnelli"/>
+        <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_Le_due_torri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Jurassic_Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attore"/>
+        <NamedIndividual IRI="#KeanuReeves"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#La_guerra_dei_mondi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lo_Hobbit"/>
+        <NamedIndividual IRI="#Lo_Hobbit_-_La_battaglia_delle_cinque_armate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lo_Hobbit"/>
+        <NamedIndividual IRI="#Lo_Hobbit_-_La_desolazione_di_Smaug"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lo_Hobbit"/>
+        <NamedIndividual IRI="#Lo_Hobbit_-_Un_viaggio_inaspettato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Matrix"/>
+        <NamedIndividual IRI="#Matrix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Matrix"/>
+        <NamedIndividual IRI="#MatrixReloaded"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Matrix"/>
+        <NamedIndividual IRI="#MatrixRevolution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Francia"/>
+        <NamedIndividual IRI="#Parigi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agente007"/>
+        <NamedIndividual IRI="#Quantum_of_Solace"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Quattro_matrimoni_e_un_funerale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attore"/>
         <NamedIndividual IRI="#RupertGrint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Schindlers_List"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agente007"/>
+        <NamedIndividual IRI="#Skyfall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agente007"/>
+        <NamedIndividual IRI="#Spectre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Regista"/>
+        <NamedIndividual IRI="#Steven_Spielberg"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#FilmIndipendente"/>
@@ -538,11 +866,66 @@
         <NamedIndividual IRI="#EmmaWatson"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#natoIn"/>
+        <NamedIndividual IRI="#DanielRadcliffe"/>
+        <NamedIndividual IRI="#Fulham"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#natoIn"/>
+        <NamedIndividual IRI="#Daniel_Craig"/>
+        <NamedIndividual IRI="#Chester"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èAttoreDi"/>
+        <NamedIndividual IRI="#Daniel_Craig"/>
+        <NamedIndividual IRI="#Casino_Royale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èAttoreDi"/>
+        <NamedIndividual IRI="#Daniel_Craig"/>
+        <NamedIndividual IRI="#Skyfall"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èAttoreDi"/>
+        <NamedIndividual IRI="#Daniel_Craig"/>
+        <NamedIndividual IRI="#Spectre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èAttoreDi"/>
+        <NamedIndividual IRI="#Daniel_Craig"/>
+        <NamedIndividual IRI="#Quantum_of_Solace"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#natoIn"/>
+        <NamedIndividual IRI="#ElijahWood"/>
+        <NamedIndividual IRI="#Cedar_Rapids"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èAttoreDi"/>
+        <NamedIndividual IRI="#ElijahWood"/>
+        <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_La_Compagnia_dellAnello"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èAttoreDi"/>
+        <NamedIndividual IRI="#ElijahWood"/>
+        <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_Il_ritorno_del_re"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èAttoreDi"/>
+        <NamedIndividual IRI="#ElijahWood"/>
+        <NamedIndividual IRI="#Il_Signore_degli_Anelli_-_Le_due_torri"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#coprotagonista"/>
         <NamedIndividual IRI="#EmmaWatson"/>
         <NamedIndividual IRI="#RupertGrint"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#natoIn"/>
+        <NamedIndividual IRI="#EmmaWatson"/>
+        <NamedIndividual IRI="#Parigi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#haAttore"/>
         <NamedIndividual IRI="#HarryPotter1"/>
         <NamedIndividual IRI="#RupertGrint"/>
@@ -550,12 +933,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#haAttore"/>
         <NamedIndividual IRI="#HarryPotter1"/>
-        <NamedIndividual IRI="#DanielRadcliffe"/>
+        <NamedIndividual IRI="#EmmaWatson"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#haAttore"/>
         <NamedIndividual IRI="#HarryPotter1"/>
-        <NamedIndividual IRI="#EmmaWatson"/>
+        <NamedIndividual IRI="#DanielRadcliffe"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#haProduttore"/>
@@ -570,12 +953,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#haAttore"/>
         <NamedIndividual IRI="#HarryPotter2"/>
-        <NamedIndividual IRI="#DanielRadcliffe"/>
+        <NamedIndividual IRI="#EmmaWatson"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#haAttore"/>
         <NamedIndividual IRI="#HarryPotter2"/>
-        <NamedIndividual IRI="#EmmaWatson"/>
+        <NamedIndividual IRI="#DanielRadcliffe"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#haProduttore"/>
@@ -601,6 +984,56 @@
         <ObjectProperty IRI="#haProduttore"/>
         <NamedIndividual IRI="#HarryPotter3"/>
         <NamedIndividual IRI="#DavidHeyman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#natoIn"/>
+        <NamedIndividual IRI="#Hugh_Grant"/>
+        <NamedIndividual IRI="#Hammersmith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èAttoreDi"/>
+        <NamedIndividual IRI="#Hugh_Grant"/>
+        <NamedIndividual IRI="#Quattro_matrimoni_e_un_funerale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èAttoreDi"/>
+        <NamedIndividual IRI="#KeanuReeves"/>
+        <NamedIndividual IRI="#MatrixRevolution"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èAttoreDi"/>
+        <NamedIndividual IRI="#KeanuReeves"/>
+        <NamedIndividual IRI="#Matrix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èAttoreDi"/>
+        <NamedIndividual IRI="#KeanuReeves"/>
+        <NamedIndividual IRI="#MatrixReloaded"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#natoIn"/>
+        <NamedIndividual IRI="#RupertGrint"/>
+        <NamedIndividual IRI="#Harlow"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#natoIn"/>
+        <NamedIndividual IRI="#Steven_Spielberg"/>
+        <NamedIndividual IRI="#Cincinnati"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èRegistaDi"/>
+        <NamedIndividual IRI="#Steven_Spielberg"/>
+        <NamedIndividual IRI="#La_guerra_dei_mondi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èRegistaDi"/>
+        <NamedIndividual IRI="#Steven_Spielberg"/>
+        <NamedIndividual IRI="#Jurassic_Park"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#èRegistaDi"/>
+        <NamedIndividual IRI="#Steven_Spielberg"/>
+        <NamedIndividual IRI="#Schindlers_List"/>
     </ObjectPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#haAttore"/>
@@ -685,6 +1118,10 @@
         <Class IRI="#Attore"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#natoIn"/>
+        <Class IRI="#Professione"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#èStatoGiratoIn"/>
         <Class IRI="#Film"/>
     </ObjectPropertyDomain>
@@ -711,6 +1148,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#haTruccatore"/>
         <Class IRI="#Truccatore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#natoIn"/>
+        <Class IRI="#Nazione"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#èStatoGiratoIn"/>
